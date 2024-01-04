@@ -1,2 +1,2 @@
 # Atividade-HTML
-Para desenvolver atividades em HTML
+Para desenvolver Formulário de Inscrição em HTML.
