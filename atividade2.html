@@ -6,27 +6,66 @@
     <h1> <title>Formulário de Pré-Matrícula</title> <h1>
     <h2> <title>Escola Virtual</title> <h2>
 </head>
-<style>body{ background-color: rgba(244, 86, 173, 0.167);</style>
+<style>body</style>
+<style>body{background-color: rgba(187, 0, 131, 0.167);</style>
 <div class=>
-<body> 
-    
-    <center>
-            <h3>Escola Virtual </h3>
-            <h4>Formulário de Pré-Matrícula </h4>
-            <hr>
-        </center>         
-    
-<h5> <p>Dados Pessoais </h5>
-<h6> <p>Nome do Aluno: <input type="text"></p> </p> </h6>
-<h6> <p>Nascimento (dd/mm/aaaa): <input </p> </h6>
-<h6> <p>Nome da Mãe: <input </p> </h6>
-<h6> <p>Nome do Pai: <input </p></h6>
-<h6> <p>Telefone: <input </p></h6>
-<h6> <p>Email: <input </p></h6>
-            <hr>
 
-            <h5> <p>Informações de Matrícula: </p> </h5>
-            <input type="button" style="width:180px;heigth:60px" aria-selected="Pré-Escolar">
-   
+<center>   
+<h3>Escola Virtual </h3>
+<h4>Formulário de Pré-Matrícula </h4>
+<hr>
+
+<center>
+<h5>Informações Pessoais</h5> 
+<form method="get" action="envio_dados.php">
+    <h6> <p>Nome do Aluno: <input type="text" name="nome" placeholder="Digite o nome do aluno(a)"> </h6>
+    <h6> <p>Data de Nascimento: <input type="text" name="data" placeholder="(DD/MM/AAAA)"> </p> </h6>
+    <h6> <p>Nome da Mãe: <input type="text" name="nome da mãe" placeholder="Informe o nome da mãe"> </p> </h6>
+    <h6> <p>Nome do Pai: <input type="text" name="nome do pai" placeholder="Informe o nome do pai"> </p> </h6>
+    <h6> <p>Telefone: <input type="text" name="telefone" placeholder="Informe o telefone"> </p> </h6>
+    <h6> <p>Email: <input type="email" name="email" placeholder="Digite seu email">
+        <input type="submit" name="Enviar">
+    </form>
+    <hr>
+
+    <h5> <p>Informações de Matrícula </p> </h5>
+    <h6> <p>Número da série: <input type="select" name="option" placeholder="Informe a série" </p> </h6>
+    <h6> <p>Selecione uma opção: </p> <h6>
+    <form method="post" action="Selecione a série.php">
+        <select name="time">
+            <option value="1° ao 5° ano">Ensino Fundamental I </option>
+            <option value="6° ao 9° ano">Ensino Fundamental II </option>
+            <option value="1° ao 3° grau">Ensino Médio </option>
+        </select>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Cancelar" />
+        </form>
+    
+    <h6> Selecione o turno desejado: <p> </h6>
+    <form method="time" action="Selecione o turno desejado.php">
+        <select name="time">
+            <option value="08:00 ás 12:00">Matutino </option>
+            <option value="13:00 ád 17:00">Vespertino </option>
+            <option value="18:00 ás 22:00">Noturno </option>
+        </select>
+        <input type="submit" value="Enviar"
+        <input type="reset" value="Cancelar"
+        </form>
+        <hr>
+
+    <h5> <p>Atividades Extracurriculares </p> </h5>
+    <h6> <p>Informática <input type="checkbox"> </p> </h6>
+    <h6> <p>Música <input type="checkbox"> </p> </h6>
+    <h6> <p>Balet <input type="checkbox"> </p> </h6>
+    <h6> <p>Pintura <input type="checkbox"> </p> </h6>
+    <h6> <p>Judô <input type="checkbox"> </p> </h6>
+    <h6> <p>Futebol <input type="checkbox"> </p> </h6>
+
+    <input type="button" style="width:180px;heigth:60px" value="Finalizar minha inscrição">
+    </center>
+</select>
+        <input type="reset" value="Cancelar"
+        </form>
+
 </body>
 </html>
